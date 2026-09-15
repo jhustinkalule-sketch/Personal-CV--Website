@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-outer: #e2e8f0;       /* Light Ice Slate (Outer background) */
+    --card-dark: #1e293b;      /* Dark Slate (Main content container) */
+    --accent-orange: #ea580c;  /* Emerald / Burnt Orange */
+    --accent-gold: #f59e0b;    /* Warm Metallic Gold */
+    --text-light: #f8fafc;     /* White text for dark areas */
+    --text-dark: #0f172a;      /* Dark text for light outer areas */
+}
+
+/* Base Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-outer);
+    color: var(--text-dark); /* Keeps outer text readable */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Container (No Orange Enclosure Box) */
+header {
+    background: transparent; /* Removes the solid orange block */
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    text-align: left; /* Aligns headings cleanly to the left like your image */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header Headings (PROFILE, BACKGROUND, ANY OTHER INFORMATION) */
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0f172a; /* Bold Dark Slate text on the light outer background */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Inline Navigation Bar under Headings */
+nav p {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    color: #475569;
+}
+
+nav a {
+    color: #ea580c; /* Emerald Orange links */
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust main top margin so it sits right under the header */
+main {
+    max-width: 900px;
+    margin: 10px auto 40px auto;
+    background-color: #1e293b;
+    color: #f8fafc;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings inside main */
+h2 {
+    color: var(--accent-orange);
+    border-bottom: 2px solid var(--accent-gold);
+    padding-bottom: 6px;
+    margin-top: 1.5rem;
+}
+
+/* General Links inside main */
+main a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main a:hover {
+    color: var(--accent-orange);
+    text-decoration: underline;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #0f172a;
+    color: var(--text-light);
+}
+
+th {
+    background-color: var(--accent-orange);
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+    color: #f8fafc;
+}
+
+tr:nth-child(even) {
+    background-color: #1e293b;
+}
+
+/* Footer Styling (Outside main container) */
+footer {
+    text-align: center;
+    color: #334155; /* Dark gray for visible text on light background */
+    padding: 20px;
+    font-weight: 600;
+}
+
+footer small {
+    color: #475569;
+}
